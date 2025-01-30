@@ -1,0 +1,131 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+}
+
+.category {
+    color: black;
+}
+
+
+body {
+font-family: Arial, sans-serif;
+/* background-color: #f4f4f4; */
+/* padding: 20px; */
+/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYg8044D_Nm6EJQuJy630QWeen77GIQUGrA&s"); */
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 50px;
+margin: auto;
+max-width: 1200px;
+}
+
+.product-card {
+background-color: white;
+border-radius: 15px;
+box-shadow: 0 4px 8px black;
+overflow: hidden;
+width: 280px;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+/* 5% larger , scale(1.0) this is the initial size*/
+.product-card:hover {
+transform: scale(1.05)    
+}
+
+.product-card img {
+width: 100%;
+height: 250px;
+border-bottom: 2px solid black
+}
+
+.product-details {
+padding: 15px;
+}
+
+.product-details h2 {
+font-size: 16px;
+margin-bottom: 10px;
+color: black;
+}
+
+.product-details p {
+font-size: 14px;
+margin: 8px 0;
+}
+
+.product-details .price {
+font-weight: bold;
+color: #e67e22;
+}
+
+.product-details .stock {
+font-weight: bold;
+color: #27ae60;
+}
+
+.product-details .category {
+color: #3498db;
+}
+
+.add-to-cart {
+background-color: #c1433a;
+color: white;
+border: none;
+padding: 5px 15px;
+margin-left: 120px;
+border-radius: 10px;
+font-size: 14px;
+width: 120px;
+cursor: pointer;
+}
+
+.add-to-cart:hover {
+background-color: #259754; 
+}
+
+.rating-container {
+display: flex;
+color: white;
+margin-left: 15px;
+margin-top: 15px;
+}
+
+
+.rating {
+font-size: 16px;
+font-weight: bold;
+background-color: #09b79d;
+border-radius: 5px;
+padding: 7px 10px;
+
+}
+.rating-container:hover{
+color: #09b79d;
+}
+.rating:hover{
+background-color: white;
+}
+.fav {
+margin-left: 150px;
+background: none;
+border: none;
+cursor: pointer;
+padding: 5px;
+color: #e74c3c;
+}
+
+.fav:hover {
+transform: scale(1.2);
+color: #bd4032;
+}

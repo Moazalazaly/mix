@@ -1,0 +1,330 @@
+/* styling the navbar  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Strike", sans-serif;
+  scroll-behavior: smooth;
+
+ }
+
+ body{
+  background-image: image-set("/images/pattern.png");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover; 
+}
+
+ 
+ 
+ /* .protest-strike-regular {
+   font-family: "Protest Strike", sans-serif;
+   font-weight: 200;
+   font-style: normal;
+ } */
+
+
+
+ .hidden {
+   display: block;
+ }
+ 
+
+ /* styling the slider */
+ .sliders-container{
+   background-color: transparent;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .sliders{
+  width: 45vw;
+  height: 45vh;
+   margin: 60px;
+   display: flex;
+   overflow: auto;
+   gap : 70px;
+   align-items: center;
+   /* justify-content: center; */
+ 
+ }
+ .sliders::-webkit-scrollbar {
+  display: none;
+ }
+
+ 
+ .slider-item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 10rem;
+   width: 220px;
+   height: 300px;
+   text-decoration: none; 
+   flex-shrink: 0;
+     transition: ease-in-out 0.5s; /* making the transiton*/
+   
+ }
+
+ .slider-item:hover{
+  box-shadow: 10px 10px 5px #94777ab7;
+  /* transition: ease-in-out 0.7s; */
+  width: 250px;
+  height: 340px;
+  overflow: hidden;
+ }
+
+ .slider-item a {
+  color: white;
+  text-decoration: none;
+}
+ .slider-item :hover{
+  text-decoration-line: none; 
+  color: white;
+ 
+ } 
+ .slider-item svg{
+   width: 50px;
+   height: 70px;
+   fill:white
+ 
+ }
+ .slider-item i {
+   width:40px; 
+   height:40px;
+   fill:white; 
+ }
+ .slider-item:nth-child(1){
+   background-color: #f99fa9;
+ }
+ 
+ .slider-item:nth-child(2){
+   background-color:#ffe292;
+ }
+ 
+ .slider-item:nth-child(3){
+   background-color:#cff0f0;
+ }
+ 
+ .slider-item:nth-child(4){
+   background-color:#b99dea;
+ }
+ 
+ .slider-item:nth-child(5){
+   background-color: #ffd9c0;
+ }
+ 
+ .slider-item:nth-child(6){
+   background-color:#7fc3c3;
+ }
+ 
+ 
+ 
+ 
+ 
+ /* styling the body */
+ .shopping-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ .shopping{
+   /* background-image: url(images/home1.png); */
+   background-image: linear-gradient(to right bottom, #6fc9d500, #ffedda00), url(/images/home1.png);
+   margin: 20px;
+   padding: 40px;
+   height: 60vh;
+   width: 70vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   background-repeat: no-repeat;
+   border-radius: 10rem ;
+   gap:5px;
+   clip-path: polygon(0 0, 100% 0, 106% 70%, 0 105%);
+   background-position-x: right;
+   overflow: hidden;
+ }
+ 
+ .shoppingBtn{
+   margin-left: 250px;
+   padding: 10px 5px;
+   height: 75px;
+   border-radius: 10rem;
+   width: 350px;
+   border: none;
+   outline: none;
+   font-size: 30px;
+   transition: all 0.5s;
+ }
+ 
+ .shopping h1 {
+   color: white;
+   text-shadow:  2px 2px 8px  #c38059;
+   font-size: 50px;
+   
+ }
+ .shopping span{
+   color: #c38059;
+   font-size: 50px;
+   text-shadow: 2px 2px 8px  white;
+ }
+ 
+ .shoppingBtn:hover{
+   box-shadow:7px 7px 3px #886cbbed; 
+   background-color: transparent;
+   color: white;
+   border:3px solid white;   
+ }
+ 
+ 
+
+ 
+ 
+ /* styling the footer */
+
+ .footer {
+  margin: 0 auto;
+ }
+
+ .footer-container{
+   height: 70vh;
+   width: 100vw;
+   background-color: #aee6e6;
+   color: white;
+   border-radius: 1.25rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-decoration: none;
+   gap: 30px;
+ }
+ 
+ 
+ .socialBtns{ 
+   height: 55px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   transition: ease-in-out 2s;
+   text-decoration: none;
+  }
+ 
+  .socialBtns :hover{
+   fill: black;
+  }
+ 
+ .paragragh{
+   font-size: x-large;
+   color:  #5aa2a2bb;
+   display: flex;
+   justify-content: space-evenly;
+   text-align: center;
+ }
+ 
+ .twoInOne{
+   width: 70vw;
+   display: flex;
+   justify-content: space-between;
+   gap: 300px;
+
+ }
+ .twoInOne h2{
+   color:#5aa2a2bb ;
+ }
+ 
+ .twoInOne a{
+   flex-direction: column;
+   text-align: center;
+   color: white;
+   font-size: 20px;
+ }
+ .category{
+   padding-left: 0px;
+ }
+ 
+ .bottom{
+   bottom: 0px;
+   width: 100vw;
+   background-color: #83bbbbd7 ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .bottom h5{
+   color: #122828de ;
+ }
+ 
+ 
+ 
+.topBtn{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #f99fa9;
+  color: white;
+  transition: ease-in-out .5s;
+  bottom: 35px;
+  right: 35px;
+  outline: none;
+  border: none;
+  display: none;
+}
+
+
+.topBtn:hover{
+  background-color: white;
+  color: #b9374672;
+  box-shadow:7px 7px 3px #ab6d74b7;
+  border:3px solid white;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+
+}
+
+.left-btn{
+  cursor: pointer;
+
+}
+.right-btn{
+  cursor: pointer;
+} 
+
+@media (max-width:1020px) {
+  .sliders{
+    width: 450px;
+    height: 280px;
+  }
+  .slider-item{
+    width: 160px;
+    height: 210px;
+  }
+  .slider-item:hover{
+    width: 180px;
+    height: 230px;
+  }
+  .shoppingBtn{
+    margin-left: 0;
+  }
+   
+}
+
+
+
+
+
+
+
+
+

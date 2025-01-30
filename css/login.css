@@ -1,0 +1,147 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: image-set("/images/pattern.png");
+}
+
+main {
+    background-image: linear-gradient( rgb(252, 152, 190),rgb(228, 228, 228),rgb(31, 155, 155));
+    width: 90%;
+    max-width: 950px;
+    height: 700px;
+    color: aliceblue;
+    margin: auto;
+    box-shadow: 5px 10px 50px black;
+    position: relative;
+    top: 50%;
+    /* left: 50%; */
+    transform: translateY(0%);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 70px;
+    padding: 20px;
+}
+
+.h11 {
+    margin: 80px auto;
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 90%;
+    border-radius: 80px;
+    background-color: rgb(31, 155, 155);
+    padding: 15px;
+}
+
+.input {
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    margin:10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: larger;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    z-index: 1;
+}
+
+label {
+    color: black;
+    width: 60%;
+}
+
+.checkbox {
+    color: black;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    margin-top:30px ;
+    margin-bottom: 60px;
+    color: aliceblue;
+    background-color: rgb(235, 137, 174);
+    font-size: 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    background-color: rgb(231, 95, 209);
+    transform: scale(1.1);
+}
+
+a {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(2, 24, 43);
+    font-family: sans-serif;
+    font-weight:bold
+    
+}
+a:hover{
+    color: aliceblue;
+}
+
+/* Responsive styles */
+@media (max-width: 1080px) {
+    .h11 {
+        font-size: 30px;
+    }
+
+    .input {
+        flex-grow: 1;
+        width: 90%;
+    }
+
+    button {
+        font-size: 24px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+}
+/*  */
+
+
+
+@media (max-width: 200px) {
+    .h11 {
+        font-size: 24px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+}
